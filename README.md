@@ -2,7 +2,7 @@
 A website built to do basic networking calls and functionality for secure networking - Ping, Host Lookup (ARP), TraceRoute, Etc.
 
 ## What the project does
-This web UI will be built for the purpose of running basic networking diagnostics and sytem checks such as:
+This web UI will be built for the purpose of running basic networking diagnostics and sytem checks such as:\
 •	Ping a host by IP address\
 •	TCPDump – watching for traffic on a specific network\
 •	Trace Route\
