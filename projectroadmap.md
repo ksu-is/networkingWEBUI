@@ -1,10 +1,10 @@
 # Project Roadmap
 
 ## Sprint 1
-* [x] 
+*[x] 
 
 ## Sprint 2
-* [x]
+*[x]
 
 ## Sprint 3
-* [x] 
+*[x] 
