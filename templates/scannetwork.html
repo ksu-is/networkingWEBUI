@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Networking</title>
+  <link rel="stylesheet" type=text/css href="{{url_for('static', filename='main.css') }}">
+</head>
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="pinghost.html">Ping Host</a>
+        <a href="tcpdump.html">TCP Dump</a>
+        <a href="traceroute.html">Trace Route</a>
+        <a href="dnslookup.html">DNS Look-Up</a>
+        <a href="hostlist.html">Host List</a>
+        <a href="scannetwork.html">Scan Network</a>
+      </div>
+
+<div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <h2>Scan Network</h2>
+  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 
