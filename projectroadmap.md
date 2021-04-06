@@ -5,8 +5,7 @@
 - [X] Run program and evaluate for functionality
 - [X] Assign OpenSource license to repository
 - [X] Wireframe Web UI
-- [X] Find relative repositories to pull instpiration from /
-        - bfoujols/fabric , nmap shell script using NMAP to scan a network
+- [X] Find relative repositories to pull inspiration and knowledge
 
 ## Sprint 2
 - [ ] HTML programming for Web UI
