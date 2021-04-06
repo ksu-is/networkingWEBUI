@@ -4,8 +4,9 @@
 - [X] Find related respository
 - [X] Run program and evaluate for functionality
 - [X] Assign OpenSource license to repository
-- [ ] Wireframe Web UI
-- [ ] Update Readme with Install instructions
+- [X] Wireframe Web UI
+- [X] Find relative repositories to pull instpiration from /b
+        - bfoujols/fabric-nmap - shell script using NMAP to scan a network
 
 ## Sprint 2
 - [ ] HTML programming for Web UI
