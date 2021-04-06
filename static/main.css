@@ -12,7 +12,11 @@ body {
 }
 
 h2{
-  margin: 100;
+  position:relative;
+}
+
+p{
+  position: relative;
 }
 
 .sidenav {
@@ -51,6 +55,8 @@ h2{
 }
 
 #main {
+  float: left;
+  margin-left: 100px;
   transition: margin-left .5s;
   padding: 16px;
 }
@@ -58,4 +64,17 @@ h2{
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+output {
+  display: block;
+  position: absolute;
+  height: 500px;
+  width: 1000px;
+  margin-top: 20px;
+  background-color: black;
+  border: rgb(212, 126, 14);
+  border-style:ridge;
+  font-family: 'Courier New', Courier, monospace;
+  color: #f1f1f1;
 }

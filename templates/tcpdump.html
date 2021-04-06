@@ -24,6 +24,23 @@
     <div id="main">
       <span style="font-size:30px;cursor:pointer; color: #525252;" onclick="openNav()">&#9776; Menu</span>
     <h2>TCP Dump</h2>
+    <p>From the drop-down list, select how many packets you would like to listen to. <br>
+        Click "Start TCP Dump" to intiate.
+    </p>
+
+    <form action="/action_page.php">
+      <label for="packets">Number of packets:</label>
+      <select name="packets" id="packets">
+        <option value=""></option>
+        <option value="10">10</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="500">500</option>
+      </select>
+      <br><br>
+      <input type="submit" style="padding: 5px; font-weight: bold; margin-top: 5px;" value="Start TCP Dump">
+      <output name="x" for="a b"></output>
+    </form>
     </div>
   </div>
 
