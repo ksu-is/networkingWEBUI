@@ -9,9 +9,9 @@
   <meta http-equiv="Expires" content="0" />
 </head>
 
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="/">Home</a>
+<body>
+  <div class="sidenav">
+    <a href="/" style="margin-top: 10;">Home</a>
     <a href="/pinghost">Ping Host</a>
     <a href="/tcpdump">TCP Dump</a>
     <a href="/traceroute">Trace Route</a>
@@ -21,32 +21,18 @@
   </div>
 
   <div class="fixed-header">
-    <div id="main">
-      <span style="font-size:30px;cursor:pointer; color: #525252;" onclick="openNav()">&#9776; Menu</span>
-    <h2>Network Scan</h2>
-    <p>Input a host name to scan.<br> 
-      Click "Start Scan" to initiate.</p>
-  
-    <form>
-      <label style="font-weight:bold;" id="fname">Host Name</label><br>
-      <input type="text" id="hostname" name="hostname" size="30" style="text-align: left;"><br>
-      <input type="submit" style="padding: 5px; font-weight: bold; margin-top: 10px;" value="Start Scan">
-      <output name="x" for="a b"></output>
-    </form>
+    <div class="main">
+      <h2>Network Scan</h2>
+      <p>Input a host name to scan.<br> 
+        Click "Start Scan" to initiate.</p>
+        <form>
+          <label style="font-weight:bold;" id="fname">Host Name</label><br>
+          <input type="text" id="hostname" name="hostname" size="30" style="text-align: left;"><br>
+          <input type="submit" style="padding: 5px; font-weight: bold; margin-top: 10px;" value="Start Scan">
+          <output name="x" for="a b"></output>
+        </form>
     </div>
   </div>
 
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
-</script>
-   
 </body>
 </html> 

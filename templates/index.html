@@ -6,45 +6,32 @@
   <link rel="stylesheet" type=text/css href="{{url_for('static', filename='main.css') }}">
 </head>
 
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="/">Home</a>
-    <a href="/pinghost">Ping Host</a>
-    <a href="/tcpdump">TCP Dump</a>
-    <a href="/traceroute">Trace Route</a>
-    <a href="/dnslookup">DNS Look-Up</a>
-    <a href="/hostlist">Host List</a>
-    <a href="/scannetwork">Network Scan</a>
-  </div>
 <body>
-<div class="fixed-header">
-  <div id="main">
-      <span style="font-size:30px;cursor:pointer; color: #525252;" onclick="openNav()">&#9776; Menu</span>
-    <h2>Network Troubleshooting</h2>
-    <p>This web page is designed for the purpose of running basic networking diagnostics and sytem checks, such as:<br>
-      <br>
-      • Ping a host by IP address<br>
-      • TCPDump – watching for traffic on a specific network<br>
-      • Trace Route<br>
-      • DNS Look-Up<br>
-      • Host List (ARP Table)<br>
-      • Scan Network – scan by VLAN, return listing of host profiles<br>
-      <br>
-    Click on the menu button at the top of the page and select a tool to get started.</p>
-  </div>
+<div class="sidenav">
+  <a href="/" style="margin-top: 10;">Home</a>
+  <a href="/pinghost">Ping Host</a>
+  <a href="/tcpdump">TCP Dump</a>
+  <a href="/traceroute">Trace Route</a>
+  <a href="/dnslookup">DNS Look-Up</a>
+  <a href="/hostlist">Host List</a>
+  <a href="/scannetwork">Network Scan</a>
 </div>
 
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
-</script>
-   
+<div class="fixed-header">
+  <div class="main">
+    <h2>Network Troubleshooting</h2>
+    <p>This web page is designed for the purpose of running basic networking diagnostics and sytem checks, such as:<br>
+    <br>
+    • Ping a host by IP address<br>
+    • TCPDump – watching for traffic on a specific network<br>
+    • Trace Route<br>
+    • DNS Look-Up<br>
+    • Host List (ARP Table)<br>
+    • Scan Network – scan by VLAN, return listing of host profiles<br>
+    <br>
+  Click on the menu button at the top of the page and select a tool to get started.</p>
+  </div>
+</div>
+     
 </body>
 </html> 
