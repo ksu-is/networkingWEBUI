@@ -25,10 +25,14 @@
       <h2>Host List</h2>
       <p>The host list or ARP Table will return all devices that are connected to your network.<br> 
         Click "Search Host" to initiate.
-        <form>
-          <input type="submit" style="padding: 5px; font-weight: bold; margin-top: 10px;" value="Search Host">
-          <output name="x" for="a b"></output>     
-        </form>  
+      <form action="{{url_for('hostlist')}}">
+        <input type="submit" class="btn btn-primary" value="Get Host List">
+      </form>  
+
+        <br>
+        <br>
+
+        <p>{{output}}</p>
       </div>
     </div>
 </body>

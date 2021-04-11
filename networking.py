@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+import os
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -12,14 +13,22 @@ def dnslookup():
 
 @app.route('/hostlist')
 def hostlist():
-	return render_template("hostlist.html")
+	hostlist=os.popen("arp -a")
+	output=hostlist.read()
+	print(output)
+	return render_template("hostlist.html", output=output)
 
-@app.route('/pinghost')
+@app.route('/pinghost', methods = ['GET', 'POST'])
 def pinghost():
-	return render_template("pinghost.html")
+	ping = request.form.get('ping')
+	hostping=os.popen('ping -n 10 {} -w 5'.format(ping))
+	output=hostping.read()
+	print(output)
+	return render_template("pinghost.html", output=output)
 
 @app.route('/scannetwork')
 def scannetwork():
+
 	return render_template("scannetwork.html")
 
 @app.route('/tcpdump')

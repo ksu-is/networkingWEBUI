@@ -25,12 +25,21 @@
       <h2>Ping Host</h2>
       <p>Input the IP Address that you wish to ping and click "Start Ping" to initiate the host ping.<br> 
         The ping will run automatically for a count of 10.</p>
-      <form>
-        <label style="font-weight:bold;" id="fname">Host Name</label><br>
-        <input type="text" id="hostname" name="hostname" size="30" style="text-align: left;"><br>
-        <input type="submit" style="padding: 5px; font-weight: bold; margin-top: 10px;" value="Start DNS Lookup">
-        <output name="x" for="a b"></output>
-      </form>
+      
+      <form action="{{url_for('pinghost')}}" method="POST">
+        <div class="form-group">
+          <input type="text" name="ping" class="form-control" placeholder="Enter IP Address">         
+        </div>
+        <input type="submit" class="btn btn-primary" value="Start Ping">
+      
+      </form>  
+
+        <br>
+        <br>
+
+        <p>{{output}}</p>
+
+
     </div>
   </div>
 

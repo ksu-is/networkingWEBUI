@@ -8,7 +8,7 @@
 - [X] Find relative repositories to pull inspiration and knowledge
 
 ## Sprint 2
-- [ ] HTML programming for Web UI
+- [ ] HTML/CSS programming for Web UI
     - [ ] DNS Lookup - NS Lookup, the host name to lookup
     - [ ] Host List - Just call the script - no input needed
     - [ ] Ping Host
@@ -17,8 +17,8 @@
     - [ ] Trace Route - Like Ping - IP Address, option for 
 - [ ] Python scripts for call on button press
     - [ ] DNS Lookup
-    - [ ] Host List
-    - [ ] Ping Host
+    - [X] Host List
+    - [X] Ping Host
     - [ ] Network Scan
     - [ ] TCP Dump
     - [ ] Trace Route
