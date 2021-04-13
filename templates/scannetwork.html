@@ -25,14 +25,18 @@
       <h2>Network Scan</h2>
       <p>Input a host name to scan.<br> 
         Click "Start Scan" to initiate.</p>
-        <form>
-          <label style="font-weight:bold;" id="fname">Host Name</label><br>
-          <input type="text" id="hostname" name="hostname" size="30" style="text-align: left;"><br>
-          <input type="submit" style="padding: 5px; font-weight: bold; margin-top: 10px;" value="Start Scan">
-          <output name="x" for="a b"></output>
-        </form>
-    </div>
-  </div>
+        <form action="{{url_for('scannetwork')}}" method="POST">
+          <div class="form-group">
+            <input type="text" name="scan" class="form-control" placeholder="Enter IP or Host Name">         
+          </div>
+          <input type="submit" class="btn btn-primary" value="Start Scan">
+        
+        </form>  
+  
+          <br>
+          <br>
+  
+          <pre>{{output}}</pre>
 
 </body>
 </html> 

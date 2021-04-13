@@ -26,14 +26,18 @@ def pinghost():
 	print(output)
 	return render_template("pinghost.html", output=output)
 
-@app.route('/scannetwork')
+@app.route('/scannetwork', methods = ['GET', 'POST'])
 def scannetwork():
-
-	return render_template("scannetwork.html")
-
+	scan = request.form.get('scan')
+	portscan=os.popen('nmap {}'.format(scan))
+	output=portscan.read()
+	print(output)
+	return render_template("scannetwork.html", output=output)
+	
 @app.route('/tcpdump')
 def tcpdump():
 	return render_template("tcpdump.html")
+
 
 @app.route("/traceroute")
 def traceroute():
