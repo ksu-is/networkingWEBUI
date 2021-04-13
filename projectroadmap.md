@@ -14,14 +14,14 @@
     - [X] Ping Host
     - [ ] Network Scan - install NMAP - ask for what the host is they want to scan (input local host name)
     - [ ] TCP Dump - Input, how many packets do we want to listen to, display output in the frame - Install, windump
-    - [ ] Trace Route - Like Ping - IP Address, option for # of packets
+    - [X] Trace Route - Like Ping - IP Address, option for # of packets
 - [ ] Python scripts for call on button press
     - [ ] DNS Lookup
     - [X] Host List
     - [X] Ping Host
     - [ ] Network Scan
     - [ ] TCP Dump
-    - [ ] Trace Route
+    - [X] Trace Route
 - [ ] Update Readme with updates
 
 ## Sprint 3

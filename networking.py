@@ -11,20 +11,26 @@ def home():
 def dnslookup():
 	return render_template("dnslookup.html")
 
-@app.route('/hostlist')
+@app.route('/hostlist', methods = ['GET', 'POST'])
 def hostlist():
-	hostlist=os.popen("arp -a")
-	output=hostlist.read()
-	print(output)
-	return render_template("hostlist.html", output=output)
+	while request.form.get('submit') == None:
+		return render_template("hostlist.html")
+	else:
+		hostlist=os.popen("arp -a")
+		output=hostlist.read()
+		print(output)
+		return render_template("hostlist.html", output=output)
 
 @app.route('/pinghost', methods = ['GET', 'POST'])
 def pinghost():
-	ping = request.form.get('ping')
-	hostping=os.popen('ping -n 10 {} -w 5'.format(ping))
-	output=hostping.read()
-	print(output)
-	return render_template("pinghost.html", output=output)
+	while request.form.get('ping') == None:
+		return render_template("pinghost.html")
+	else:
+		ping = request.form.get('ping')
+		hostping=os.popen('ping -n 10 {} -w 5'.format(ping))
+		output=hostping.read()
+		print(output)
+		return render_template("pinghost.html", output=output)
 
 @app.route('/scannetwork', methods = ['GET', 'POST'])
 def scannetwork():
@@ -39,10 +45,17 @@ def tcpdump():
 	return render_template("tcpdump.html")
 
 
-@app.route("/traceroute")
+@app.route("/traceroute", methods = ['GET', 'POST'])
 def traceroute():
-	return render_template("traceroute.html")
-
+	while request.form.get('trace') == None:
+		return render_template("traceroute.html")
+	else:
+		trace = request.form.get('trace')
+		traceroute=os.popen('tracert -h 10 {}'.format(trace))
+		output=traceroute.read()
+		print(output)
+		return render_template("traceroute.html", output=output)
+	
 if __name__ == "__main__":
 	app.run(debug=True)
 

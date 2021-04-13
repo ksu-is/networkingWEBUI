@@ -4,9 +4,6 @@
   <meta charset="UTF-8">
   <title>Ping Host</title>
   <link rel="stylesheet" type=text/css href="{{url_for('static', filename='main.css') }}">
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
 </head>
 
 <body>
@@ -28,7 +25,7 @@
       
       <form action="{{url_for('pinghost')}}" method="POST">
         <div class="form-group">
-          <input type="text" name="ping" class="form-control" placeholder="Enter IP Address">         
+          <input type="text" name="ping" class="form-control">         
         </div>
         <input type="submit" class="btn btn-primary" value="Start Ping">
       
