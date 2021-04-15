@@ -16,6 +16,13 @@ Within a system of separate, secure networks, a company's IT department will be 
 ## Who maintains and contributes to the project
 Maintained and contributed to by Daniel Hopps
 
+## How to run
+1. Fork or Download the repository
+2. Install necissary packages for your specific OS 
+    - Windows - Download and instlall NMAP
+3. Launch code in VisualStudio
+4. Run networking.py
+5. Navigate to local host in a web browsesr
 
 
 
