@@ -22,23 +22,21 @@
 
   <div class="fixed-header">
     <div class="main">
+
       <h2>Trace Route</h2>
       <p>Input the IP Address that you wish trace and click "Start Trace Route" to initiate the trace.</p>
-      
+
       <form action="{{url_for('traceroute')}}" method="POST">
         <div class="form-group">
           <input type="text" name="trace" class="form-control">         
         </div>
         <input type="submit" class="btn btn-primary" value="Start Trace Route">
-      
       </form>  
 
         <br>
         <br>
 
         <pre>{{output}}</pre>
-
-
     </div>
   </div>
 

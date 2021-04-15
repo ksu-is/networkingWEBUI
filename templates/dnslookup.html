@@ -24,15 +24,19 @@
     <div class="main">
       <h2>DNS Look-Up</h2>
       <p>Input a host name to return the DNS. I.E: www.google.com<br> 
-        Click "Start DNS Lookup" to initiate.</p>
-      <form>
-        <label style="font-weight:bold;" id="fname">Host Name</label><br>
-        <input type="text" id="hostname" name="hostname" size="30" style="text-align: left;"><br>
-        <input type="submit" style="padding: 5px; font-weight: bold; margin-top: 10px;" value="Start DNS Lookup">
-        <output name="x" for="a b"></output>
-      </form>
+         Click "Start DNS Lookup" to initiate.</p>
     </div>
-  </div>
+        <form action="{{url_for('dnslookup')}}" method="POST">
+          <div class="form-group">
+          <input type="text" name="dns" class="form-control">         
+          </div>
+          <input type="submit" class="btn btn-primary" value="Start DNS Lookup">
+        </form>     
+      <br>
+      <br>
+  
+      <pre>{{output}}</pre>
+  </div> 
 
 </body>
 </html> 

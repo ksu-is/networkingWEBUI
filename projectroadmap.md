@@ -9,17 +9,17 @@
 
 ## Sprint 2
 - [ ] HTML/CSS programming for Web UI
-    - [ ] DNS Lookup - NS Lookup, the host name to lookup
+    - [X] DNS Lookup - NS Lookup, the host name to lookup
     - [X] Host List - Just call the script - no input needed
     - [X] Ping Host
-    - [ ] Network Scan - install NMAP - ask for what the host is they want to scan (input local host name)
+    - [X] Network Scan - install NMAP - ask for what the host is they want to scan (input local host name)
     - [ ] TCP Dump - Input, how many packets do we want to listen to, display output in the frame - Install, windump
     - [X] Trace Route - Like Ping - IP Address, option for # of packets
 - [ ] Python scripts for call on button press
-    - [ ] DNS Lookup
+    - [X] DNS Lookup
     - [X] Host List
     - [X] Ping Host
-    - [ ] Network Scan
+    - [X] Network Scan
     - [ ] TCP Dump
     - [X] Trace Route
 - [ ] Update Readme with updates

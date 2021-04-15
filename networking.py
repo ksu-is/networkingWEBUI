@@ -7,13 +7,20 @@ app = Flask(__name__)
 def home():
 	return render_template("index.html")
 
-@app.route('/dnslookup')
+@app.route('/dnslookup', methods = ['GET', 'POST'])
 def dnslookup():
-	return render_template("dnslookup.html")
+	if request.form.get('dns') == None:
+		return render_template("dnslookup.html")
+	else:
+		dns = request.form.get('dns')
+		dnslookup=os.popen('nslookup {}'.format(dns))
+		output=dnslookup.read()
+		print(output)
+	return render_template("dnslookup.html", output=output)
 
 @app.route('/hostlist', methods = ['GET', 'POST'])
 def hostlist():
-	while request.form.get('submit') == None:
+	if request.form.get('submit') == None:
 		return render_template("hostlist.html")
 	else:
 		hostlist=os.popen("arp -a")
@@ -23,7 +30,7 @@ def hostlist():
 
 @app.route('/pinghost', methods = ['GET', 'POST'])
 def pinghost():
-	while request.form.get('ping') == None:
+	if request.form.get('ping') == None:
 		return render_template("pinghost.html")
 	else:
 		ping = request.form.get('ping')
@@ -34,11 +41,14 @@ def pinghost():
 
 @app.route('/scannetwork', methods = ['GET', 'POST'])
 def scannetwork():
-	scan = request.form.get('scan')
-	portscan=os.popen('nmap {}'.format(scan))
-	output=portscan.read()
-	print(output)
-	return render_template("scannetwork.html", output=output)
+	if request.form.get('scan') == None:
+		return render_template("scannetwork.html")
+	else:
+		scan = request.form.get('scan')
+		portscan=os.popen('nmap {}'.format(scan))
+		output=portscan.read()
+		print(output)
+		return render_template("scannetwork.html", output=output)
 	
 @app.route('/tcpdump')
 def tcpdump():
@@ -47,7 +57,7 @@ def tcpdump():
 
 @app.route("/traceroute", methods = ['GET', 'POST'])
 def traceroute():
-	while request.form.get('trace') == None:
+	if request.form.get('trace') == None:
 		return render_template("traceroute.html")
 	else:
 		trace = request.form.get('trace')

@@ -1,6 +1,6 @@
 .fixed-header{
   width: 100%;
-  height: 50px;
+  height: 60px;
   top: 0;
   left: 0;
   position: fixed;        
@@ -10,7 +10,8 @@
 h2{
   position:relative;
   color: #505050;
-  margin-bottom: 5;
+  padding-bottom: 100;
+  font-size: 30px;
 }
 
 p{
