@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Networking</title>
+  <link rel="stylesheet" type=text/css href="{{url_for('static', filename='main.css') }}">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+</head>
+
+<body>
+  <div class="sidenav">
+    <a href="/" style="margin-top: 10;">Home</a>
+    <a href="/pinghost">Ping Host</a>
+    <a href="/tcpdump">TCP Dump</a>
+    <a href="/traceroute">Trace Route</a>
+    <a href="/dnslookup">DNS Look-Up</a>
+    <a href="/hostlist">Host List</a>
+    <a href="/scannetwork">Network Scan</a>
+  </div>
+
+  <div class="fixed-header">
+    <div class="main">
+
+
+            <h2>Login</h2>
+            
+            <form action="/action_page.php" method="post">
+            
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                
+                <br>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <br>    
+                <button type="submit">Login</button>
+                <label>
+                    <br>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+            
+              <div class="container">
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form>
+            
+            </body>
+            </html>

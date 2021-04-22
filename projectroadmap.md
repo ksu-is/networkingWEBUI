@@ -13,8 +13,9 @@
     - [X] Host List - Just call the script - no input needed
     - [X] Ping Host
     - [X] Network Scan - install NMAP - ask for what the host is they want to scan (input local host name)
-    - [ ] TCP Dump - Input, how many packets do we want to listen to, display output in the frame - Install, windump
+    - [X] TCP Dump - Input, how many packets do we want to listen to, display output in the frame - Install, windump
     - [X] Trace Route - Like Ping - IP Address, option for # of packets
+    - [X] Add Login Page
 - [ ] Python scripts for call on button press
     - [X] DNS Lookup
     - [X] Host List
@@ -22,7 +23,8 @@
     - [X] Network Scan
     - [ ] TCP Dump
     - [X] Trace Route
-- [ ] Update Readme with updates
+- [ ] Update Readme
+    - [ ] Keeping TCP Dump page, but it will not work via windows
 
 ## Sprint 3
 - [ ] Connect and test all scripts
