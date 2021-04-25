@@ -11,13 +11,7 @@
 
 <body>
   <div class="sidenav">
-    <a href="/" style="margin-top: 10;">Home</a>
-    <a href="/pinghost">Ping Host</a>
-    <a href="/tcpdump">TCP Dump</a>
-    <a href="/traceroute">Trace Route</a>
-    <a href="/dnslookup">DNS Look-Up</a>
-    <a href="/hostlist">Host List</a>
-    <a href="/scannetwork">Network Scan</a>
+
   </div>
 
   <div class="fixed-header">
@@ -26,7 +20,7 @@
 
             <h2>Login</h2>
             
-            <form action="/action_page.php" method="post">
+            <form name = "Login">
             
               <div class="container">
                 <label for="uname"><b>Username</b></label>
@@ -49,5 +43,18 @@
               </div>
             </form>
             
+            <script language="javascrip">
+              function check(form)
+              if(form.uname.value== "dhopps" && form.psw.value == "kennesaw")
+              {
+                window.open(index.html)
+              }
+              else
+              {
+                alert("The Username and Password you")
+              }
+
+
+            </script>
             </body>
             </html>

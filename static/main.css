@@ -16,6 +16,11 @@ h2{
 
 p{
   position: relative;
+  font-weight: bold;
+}
+
+p2{
+  text-indent: 3px;
 }
 
 body {
@@ -112,4 +117,5 @@ span.psw {
   float: left;
   padding-top: 16px;
 }
+
 

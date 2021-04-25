@@ -11,7 +11,7 @@
 
 <body>
   <div class="sidenav">
-    <a href="/" style="margin-top: 10;">Home</a>
+    <a href="/index" style="margin-top: 10;">Home</a>
     <a href="/pinghost">Ping Host</a>
     <a href="/tcpdump">TCP Dump</a>
     <a href="/traceroute">Trace Route</a>
@@ -25,17 +25,17 @@
       <h2>DNS Look-Up</h2>
       <p>Input a host name to return the DNS. I.E: www.google.com<br> 
          Click "Start DNS Lookup" to initiate.</p>
-    </div>
+    
         <form action="{{url_for('dnslookup')}}" method="POST">
-          <div class="form-group">
           <input type="text" name="dns" class="form-control">         
-          </div>
           <input type="submit" class="btn btn-primary" value="Start DNS Lookup">
-        </form>     
+        </form>
+          
       <br>
       <br>
   
       <pre>{{output}}</pre>
+    </div>  
   </div> 
 
 </body>
