@@ -25,7 +25,7 @@ Maintained and contributed to by Daniel Hopps
 5. Navigate to local host in a web browser
 
 ## Notes
-- The TCP Dump (port sniffer) tool will not run in windows as windows does not have a TCP Dump tool
+- The TCP Dump (packet sniffer) tool will not run in windows as windows does not have a TCP Dump tool
 - The login page is not finished, it is built as PHP and I have not built the backend PHP for it
 
 
